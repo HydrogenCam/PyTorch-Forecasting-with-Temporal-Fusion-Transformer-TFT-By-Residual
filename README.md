@@ -1,14 +1,16 @@
-# Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting implemented in Pytorch
-Authors: Bryan Lim, Sercan Arik, Nicolas Loeff and Tomas Pfister
+# PyTorch-Forecasting with Temporal Fusion Transformer (TFT) by Residual
 
-Paper Link: [https://arxiv.org/pdf/1912.09363.pdf](https://arxiv.org/pdf/1912.09363.pdf)
+This repository implements **Residual Learning with Temporal Fusion Transformer (TFT)** for short-term electricity demand forecasting.  
+The approach combines operator forecasts (e.g., **Total Load Forecast, TLF**) with a TFT that models **residual errors**, keeping baseline accuracy while improving **interpretability** and **responsiveness to short-term shocks**.
 
-# Implementation
-This repository contains the source code for the Temporal Fusion Transformer reproduced in Pytorch using [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) which is used to scale models and write less boilerplate . In the moment, the model is trained with the Electricity dataset from the paper. However, im currently working on the code to allow the use of the other 3 datasets described in the paper and reproduce the results.
+---
 
-- **data_formatters**: Stores the main dataset-specific column definitions, along with functions for data transformation and normalization. For compatibility with the TFT, new experiments should implement a unique GenericDataFormatter (see base.py), with examples for the default experiments shown in the other python files.
+## ✨ Features
+- **Residual framework**: predict residuals (`error = target − operator_forecast`) and reconstruct target (`target = operator_forecast + error_hat`).
+- **Four experiment regimes**: baseline, without operator input, seasonal substitution, and residual learning.
+- **Interpretability tools**: Integrated Gradients (IG), Top-k ranking, permutation and zero ablation.
+- **Evaluation**: Quantile Loss during training and testing, plus visualization scripts.
 
-- **data**: Stores the main dataset-specific download procedure, along with the pytorch dataset class ready to use as input to the dataloader and the model.
+---
 
-# Training
-To run the training procedure, open up **training_tft.ipynb** and execute all cells to start training.
+## 📂 Repository Structure
