@@ -11,24 +11,6 @@ The approach combines operator forecasts (e.g., **Total Load Forecast, TLF**) wi
 - **Interpretability tools**: Integrated Gradients (IG), Top-k ranking, permutation and zero ablation.
 - **Evaluation**: Quantile Loss during training and testing, plus visualization scripts.
 
----
-
-## 📂 Repository Structure
-```text
-.
-├── configs/                # Experiment configs (E0–E3, paths, hparams)
-├── data/                   # Dataset folder (see below)
-├── notebooks/              # Optional exploration notebooks
-├── src/                    # Core code: datasets, models, training, evaluation
-│   ├── datasets/
-│   ├── models/
-│   ├── training/
-│   ├── evaluation/
-│   └── utils/
-├── scripts/                # CLI entry points (train/test/eval/plot)
-├── lightning_logs/         # Saved runs (tft/version_E0, version_E1, …)
-├── requirements.txt
-└── README.md
 
 ## 📊 Data
 
