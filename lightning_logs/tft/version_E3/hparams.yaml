@@ -1,0 +1,68 @@
+category_counts: '[8, 21]'
+column_definition: '[(''identifier'', <DataTypes.CATEGORICAL: 1>, <InputTypes.ID:
+  4>), (''days_from_start'', <DataTypes.REAL_VALUED: 0>, <InputTypes.TIME: 5>), (''err_target'',
+  <DataTypes.REAL_VALUED: 0>, <InputTypes.TARGET: 0>), (''hour'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''day_of_week'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''forecast solar day ahead'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''forecast wind onshore day ahead'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''price day ahead'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''temp_weighted'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''temp_min_weighted'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''temp_max_weighted'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''pressure_weighted'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''humidity_weighted'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.KNOWN_INPUT: 2>), (''wind_speed_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''wind_deg_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''rain_1h_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''rain_3h_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''snow_3h_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''clouds_all_weighted'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''total load forecast'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.KNOWN_INPUT: 2>), (''price actual'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.OBSERVED_INPUT: 1>), (''generation biomass'', <DataTypes.REAL_VALUED:
+  0>, <InputTypes.OBSERVED_INPUT: 1>), (''generation fossil brown coal/lignite'',
+  <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT: 1>), (''generation fossil
+  coal-derived gas'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT: 1>),
+  (''generation fossil gas'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation fossil hard coal'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation fossil oil'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation fossil oil shale'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation fossil peat'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation geothermal'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation hydro pumped storage consumption'', <DataTypes.REAL_VALUED: 0>,
+  <InputTypes.OBSERVED_INPUT: 1>), (''generation hydro run-of-river and poundage'',
+  <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT: 1>), (''generation hydro
+  water reservoir'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT: 1>),
+  (''generation marine'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation nuclear'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation other'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation other renewable'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation solar'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation waste'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation wind offshore'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''generation wind onshore'', <DataTypes.REAL_VALUED: 0>, <InputTypes.OBSERVED_INPUT:
+  1>), (''weather_main'', <DataTypes.CATEGORICAL: 1>, <InputTypes.OBSERVED_INPUT:
+  1>), (''weather_description_simplified'', <DataTypes.CATEGORICAL: 1>, <InputTypes.OBSERVED_INPUT:
+  1>)]'
+dropout_rate: 0.1
+early_stopping_patience: 10
+err_target: true
+hidden_layer_size: 64
+input_obs_loc: '[0]'
+input_size: 41
+known_categorical_inputs: '[]'
+known_regular_inputs: '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]'
+learning_rate: 0.0005
+max_gradient_norm: 1.0
+minibatch_size: 64
+multiprocessing_workers: 5
+num_encoder_steps: 168
+num_epochs: 100
+num_heads: 2
+output_size: 1
+stack_size: 1
+static_input_loc: '[]'
+tlf_replace_with_seasonal: false
+total_time_steps: 192
+use_tlf: true
+weight_decay: 0.001
