@@ -1,0 +1,39 @@
+variable,perturbed_mean_loss,delta,impact_percent
+total load forecast,1.373308,1.284036,1438.3420
+hour,0.121486,0.032214,36.0855
+forecast solar day ahead,0.120716,0.031444,35.2223
+temp_max_weighted,0.093915,0.004643,5.2007
+generation hydro water reservoir,0.091958,0.002686,3.0093
+day_of_week,0.091949,0.002677,2.9985
+forecast wind onshore day ahead,0.091450,0.002178,2.4398
+price day ahead,0.090957,0.001685,1.8880
+clouds_all_weighted,0.090226,0.000954,1.0686
+temp_min_weighted,0.090024,0.000752,0.8424
+generation biomass,0.089811,0.000539,0.6033
+generation wind onshore,0.089634,0.000362,0.4056
+generation waste,0.089586,0.000314,0.3522
+pressure_weighted,0.089533,0.000261,0.2925
+temp_weighted,0.089456,0.000184,0.2063
+generation solar,0.089317,0.000045,0.0500
+rain_3h_weighted,0.089277,0.000005,0.0061
+snow_3h_weighted,0.089272,0.000000,0.0000
+generation fossil coal-derived gas,0.089272,0.000000,0.0000
+generation fossil oil shale,0.089272,0.000000,0.0000
+generation fossil peat,0.089272,0.000000,0.0000
+generation geothermal,0.089272,0.000000,0.0000
+generation marine,0.089272,0.000000,0.0000
+generation wind offshore,0.089272,0.000000,0.0000
+rain_1h_weighted,0.089177,-0.000095,-0.1059
+generation other,0.089172,-0.000100,-0.1124
+generation fossil oil,0.089137,-0.000135,-0.1515
+generation hydro run-of-river and poundage,0.088824,-0.000448,-0.5014
+price actual,0.088771,-0.000501,-0.5615
+generation nuclear,0.088494,-0.000778,-0.8719
+generation fossil hard coal,0.088196,-0.001076,-1.2051
+wind_speed_weighted,0.088194,-0.001078,-1.2077
+generation other renewable,0.088099,-0.001173,-1.3135
+humidity_weighted,0.087977,-0.001295,-1.4507
+generation hydro pumped storage consumption,0.087752,-0.001520,-1.7026
+wind_deg_weighted,0.087693,-0.001579,-1.7686
+generation fossil gas,0.085884,-0.003388,-3.7950
+generation fossil brown coal/lignite,0.085859,-0.003413,-3.8234
